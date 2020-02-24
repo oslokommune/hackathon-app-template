@@ -16,6 +16,8 @@ jobs:
           registry-url: https://npm.pkg.github.com
           scope: '@tuuturu'
       - run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: npm run build
 
       - name: Deploy to GitHub Pages
