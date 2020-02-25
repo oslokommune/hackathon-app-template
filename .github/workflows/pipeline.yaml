@@ -1,6 +1,9 @@
 name: Pipeline
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   deploy:
@@ -20,6 +23,8 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.JULIUS_TOKEN }}
       - run: npm run build
+        env:
+          NODE_ENV: production
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@3.2.1

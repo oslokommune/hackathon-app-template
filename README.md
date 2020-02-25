@@ -1,19 +1,24 @@
-# app
+# App-navn
 
-## Project setup
+## Ressurser
+- [Komponentbibliotek](https://tuuturu.github.io/vue/)
+- [Farger](https://styleguide.oslo.kommune.no/#/pattern/globals-colors-palette)
+
+Komponenter og fargene er basert på [Oslo Style Guide](https://styleguide.oslo.kommune.no/).  
+
+## Prosjektoppsett
+### Installer prosjektets avhengigheter
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Start en webserver som oppdaterer seg kontinuerlig
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Deploy til oslokommune.github.io/App-navn
 ```
-npm run build
+git push origin master
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
