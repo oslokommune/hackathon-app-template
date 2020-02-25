@@ -1,3 +1,3 @@
 module.exports = {
-	publicPath: '/hackathon-app-template/'
+	publicPath: process.env.NODE_ENV === 'production' ? '/hackathon-app-template/' : '/'
 }
