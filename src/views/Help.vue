@@ -16,7 +16,7 @@
 			For eksempel, har dere tilgang til på tekstfeltet <span class="bold">TextInput</span> og knappen
 			<span class="bold">BaseButton</span> som kan brukes slik:
 			<br />
-			<TextInput v-model="exampleText" />
+			<TextInput style="display: inline-block; margin-right: 1em;" v-model="exampleText" />
 			<BaseButton primary>Submit</BaseButton>
 			<br />
 			Alle komponentene tilgjengelig finner dere

@@ -1,12 +1,19 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Hjem</router-link> |
-      <router-link to="/help">Hjelp</router-link>
-    </div>
+    <Header />
+
     <router-view/>
+
+    <Footer />
   </div>
 </template>
+
+<script>
+import { Header, Footer } from '@tuuturu/vue/page'
+export default {
+  components: { Header, Footer }
+}
+</script>
 
 <style lang="scss">
 $osg-font-path: '~styleguide/src/assets/fonts';
@@ -56,6 +63,14 @@ p {
 
 }
 
+html, body, #app {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 #app {
   font-family: 'Oslo Sans', Avenir, Helvetica, Arial, sans-serif;
   font-size: 14pt;
@@ -65,16 +80,14 @@ p {
   color: #2c3e50;
 }
 
-#nav {
-  padding: 30px;
+.Header {
+  margin-bottom: 1em;
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.Footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 </style>
+
