@@ -11,7 +11,7 @@
     "@tuuturu/vue": "latest",
     "core-js": "^3.6.4",
     "minireset.css": "0.0.6",
-    "styleguide": "git+ssh://git@github.com/oslokommune/styleguide.git#0.35.10",
+    "styleguide": "https://github.com/oslokommune/styleguide.git#0.35.10",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5"
   },
