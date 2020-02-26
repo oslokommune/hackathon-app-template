@@ -7,6 +7,10 @@
 Komponenter og fargene er basert på [Oslo Style Guide](https://styleguide.oslo.kommune.no/).  
 
 ## Prosjektoppsett
+### Få tak i en fil som heter .npmrc og plasser den i prosjektets rot-mappe (spør Julius)
+```
+cp ~/Downloads/.npmrc .
+```
 ### Installer prosjektets avhengigheter
 ```
 npm install
