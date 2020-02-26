@@ -37,6 +37,11 @@
 			<li><a href="http://insomnobot3000.com/">http://insomnobot3000.com/</a></li>
 			<li><a href="https://growthbot.org/chat">https://growthbot.org/chat</a></li>
 		</ul>
+		<h2>Klassiske produktpresentasjonssider</h2>
+		<ul>
+			<li><a href="https://www.bouvet.no/prosjekter/nytt-informasjons-og-velkomstsenter-pa-osl">https://www.bouvet.no/prosjekter/nytt-informasjons-og-velkomstsenter-pa-osl</a></li>
+			<li><a href="https://mailchimp.com/">https://mailchimp.com/</a></li>
+		</ul>
 
 	</div>
 </template>

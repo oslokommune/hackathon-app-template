@@ -7,7 +7,8 @@
 			<router-link to="/Resources">Ressurser</router-link>
 		</div>
 		<h1>Ressurser️</h1>
-		<h2>Produktpresentasjoner</h2>
+		<a href="https://docs.google.com/presentation/d/1hULJEx092QZYeUhy5K15L67b0vYTlYnDDw7qQIrjuBg/edit#slide=id.g6ea9cd5290_2_122">Presentasjonen</a>
+		<h2>Beskrivelse av produktområdene</h2>
 		<ul>
 			<li><a href="https://docs.google.com/presentation/d/1hqH6mUmLMdX9TtFVXjfqvUze5kuYzq-ZyN9v1Va5xm0/edit#slide=id.g7e2e960ec4_2_18" target="_blank">Dataplattform</a></li>
 			<li><a href="https://docs.google.com/presentation/d/1G9a7gGHC7JrWv4levx8we8iVeEfbKyr9z7X6CequxTs/edit#slide=id.g7df26df15c_0_87" target="_blank">Informasjonsforvaltning</a></li>
@@ -17,7 +18,7 @@
 		</ul>
 		<h2>Maler og verktøy</h2>
 		<ul>
-			<li><a href="#">Kjernemodellen</a></li>
+			<li><a href="https://medium.com/kjernemodellen/slik-bruker-du-kjernemodellen-40de60a46850" target="_blank">Kjernemodellen</a> - et verktøy for å forenkle, prioritere og få ting til å skje.</li>
 		</ul>
 		<h2>Skrivetips</h2>
 			<h3>Hvordan skrive klartekst</h3>

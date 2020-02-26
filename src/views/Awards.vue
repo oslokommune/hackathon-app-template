@@ -6,8 +6,18 @@
 			<router-link to="/Awards">Premier</router-link> |
 			<router-link to="/Resources">Ressurser</router-link>
 		</div>
-		<h1>Premier ⭐️</h1>
-		<p>Link til OKR-tracker</p>
+		<h1>Premier 🏆️</h1>
+		<p>I tillegg til å bli vurdert av en jury vil dere kunne samle inn ekstra poeng og creds om dere gjør noen oppgaver forbundet med løsningen og utviklingen av den. Disse er:</p>
+		<br />
+		<ul>
+			<li>⭐ Brukt/integrert mot ekstern ressurs (API, datasett, Slack, bilde etc.)</li>
+			<li>⭐ Brukertestet</li>
+			<li>⭐ Integrasjon med annet team sitt produkt</li>
+			<li>⭐ Skissert ut flere konsepter</li>
+		</ul>
+		<br />
+		<p>Oppdater disse målene underveis ettersom dere klarer dem i vår eminente <a href="https://okr.oslo.systems/product/hackathon" target="_blank">OKR-tracker</a></p>
+
 	</div>
 </template>
 
