@@ -23,7 +23,7 @@
 			For eksempel har dere tilgang til
 			komponenten BaseButton som kan brukes slik:
 			<br />
-<!--			<TextInput style="display: inline-block; margin-right: 1em;" v-model="exampleText" />-->
+			<TextInput style="display: inline-block; margin-right: 1em;" v-model="exampleText" />
 			<BaseButton primary style="margin: 1em 0 1em 0;">Submit</BaseButton>
 			<br />
 			Dere står fritt til å modifisere de eksisterende komponentene eller lage egne om dere trenger det.
