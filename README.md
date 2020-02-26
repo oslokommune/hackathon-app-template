@@ -26,4 +26,4 @@ Vi har laget en veiledning, denne finnes på [localhost/#/help](http://localhost
 ```
 git push origin master
 ```
-Det kan ta et par minutter fra bygg er ferdig før forandringen er synlig i produksjon
+P.S.: Det kan ta et par minutter fra bygg er ferdig før forandringen er synlig i produksjon
