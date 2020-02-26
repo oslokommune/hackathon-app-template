@@ -1,8 +1,15 @@
 <template>
 	<div class="Help">
+		<div id="nav">
+			<router-link to="/Help">Hjelp</router-link> |
+			<router-link to="/Inspiration">Inspirasjon</router-link> |
+			<router-link to="/Awards">Premier</router-link> |
+			<router-link to="/Resources">Ressurser</router-link>
+		</div>
+		<img alt="clippy" src="https://media.giphy.com/media/13V60VgE2ED7oc/giphy.gif" style="position: fixed; bottom: 2em; right: 2em;" />
 		<h1>Hjelp</h1>
 		<p>
-			Eksempler på bruk av følgene komponenter, farger og verktøy finnes i kildekoden til denne filen. Denne
+			Eksempler på bruk av følgende komponenter, farger og verktøy finnes i kildekoden til denne filen. Denne
 			ligger i
 			<a href="https://github.com/oslokommune/hackathon-app-template/blob/master/src/views/Help.vue">
 				prosjekt-mappe/src/views/Help.vue
@@ -13,38 +20,35 @@
 		<h2>Komponenter</h2>
 		<p>
 			Vi har laget noen komponenter dere kan bruke for å komme kjapt i gang.
-			For eksempel, har dere tilgang til på tekstfeltet <span class="bold">TextInput</span> og knappen
-			<span class="bold">BaseButton</span> som kan brukes slik:
+			For eksempel har dere tilgang til
+			komponenten BaseButton som kan brukes slik:
 			<br />
-			<TextInput style="display: inline-block; margin-right: 1em;" v-model="exampleText" />
-			<BaseButton primary>Submit</BaseButton>
+<!--			<TextInput style="display: inline-block; margin-right: 1em;" v-model="exampleText" />-->
+			<BaseButton primary style="margin: 1em 0 1em 0;">Submit</BaseButton>
 			<br />
-			Alle komponentene tilgjengelig finner dere
-			<a href="https://tuuturu.github.io/vue/?path=/story/buttons-button--primary">her</a>.
+			Dere står fritt til å modifisere de eksisterende komponentene eller lage egne om dere trenger det.
+			Ta en titt på <a href="https://tuuturu.github.io/vue/?path=/story/buttons-button--primary">oversikten over komponentene</a> for å se hva som er tilgjengelig.
 		</p>
 
 
 		<h2>Farger</h2>
 		<p>
 			Fargene er hentet ut fra
-			<a href="https://styleguide.oslo.kommune.no">Oslo Styleguide</a>
-			og dere har tilgang til alle fargene nevnt
-			<a href="https://styleguide.oslo.kommune.no/#/pattern/globals-colors-palette">her</a> via scss importen
-			<span class="bold">@import '~@tuuturu/styling/style';</span>
+			<a href="https://styleguide.oslo.kommune.no/#/pattern/globals-colors-palette">Oslo Styleguide</a>
+			og dere har tilgang til alle fargene via scss importen <code>@import '~@tuuturu/styling/style';</code>
 			<br />
-			For eksempel kan man bruke
+			For eksempel kan man bruke:
 		</p>
 		<br />
-		<span id="exampleRed" class="exampleText">$red</span>
-		<span id="examplePurple" class="exampleText">$purple-visited</span>
-		<span id="exampleGreen" class="exampleText">$green</span>
-		<span id="exampleBeige" class="exampleText">$beige</span>
+		<div id="exampleRed" class="exampleColor">$red</div>
+		<div id="examplePurple" class="exampleColor">$purple-visited</div>
+		<div id="exampleGreen" class="exampleColor">$green</div>
+		<div id="exampleBeige" class="exampleColor">$beige</div>
 
 
 		<h2>Typografi</h2>
 		<p>
-			Vi har tatt oss friheten til å style ting løst etter Oslo Styleguide. Hvis dere ønsker å endre eller slette
-			stilene, kan dette gjøres i
+			Vi har lagt til stiler på lenker, H1, H2 og H3 samt paragrafer. Hvis dere ønsker å endre disse globale stilene eller legge til egne kan dette gjøres i
 			<a href="https://github.com/oslokommune/hackathon-app-template/blob/master/src/App.vue">prosjekt-mappe/src/App.vue</a>
 		</p>
 
@@ -78,7 +82,6 @@ export default {
 
 .Help {
 	text-align: left;
-	padding: 1em;
 }
 
 .bold {
@@ -88,9 +91,11 @@ export default {
 /*
  * Bruk av farger
  */
-.exampleText {
-	padding: 0.5em;
+.exampleColor {
+	padding: 1em;
+	min-width: 9em;
 	margin-right: 0.5em;
+	display: inline-block;
 }
 #exampleRed {
 	background-color: $red;
@@ -104,5 +109,17 @@ export default {
 }
 #exampleBeige {
 	background-color: $beige-dark;
+}
+
+#nav {
+
+	a {
+		color: #2c3e50;
+		border-bottom: 0;
+
+		&.router-link-exact-active {
+			color: $red;
+		}
+	}
 }
 </style>

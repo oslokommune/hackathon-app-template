@@ -2,7 +2,7 @@
   <div id="app">
     <Header />
 
-    <router-view/>
+    <router-view class="content"/>
 
     <Footer />
   </div>
@@ -60,7 +60,7 @@ h3 {
   }
 }
 p {
-
+  max-width: 36em;
 }
 
 html, body, #app {
@@ -78,6 +78,13 @@ html, body, #app {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+  width: calc(100% - 8rem);
+  margin: 0 auto;
 }
 
 .Header {
@@ -85,9 +92,8 @@ html, body, #app {
 }
 
 .Footer {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
+  margin-top: 4em;
+  flex-shrink: 0;
 }
 </style>
 
