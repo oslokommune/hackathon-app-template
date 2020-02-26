@@ -20,9 +20,10 @@ npm install
 ```
 npm run serve
 ```
+Vi har laget en veiledning, denne finnes på [localhost/#/help](http://localhost:8080/#/help) etter man har kjørt 'npm run serve'
 
-### Deploy til oslokommune.github.io/App-navn
+### Deploy til [produksjon](https://oslokommune.github.io/hackathon-app-template/)
 ```
 git push origin master
 ```
-
+Det kan ta et par minutter fra bygg er ferdig før forandringen er synlig i produksjon

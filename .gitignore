@@ -106,4 +106,7 @@ dist
 # Intellij settings
 .idea/
 
+# .npmrc
 .npmrc
+.npmrc~
+.npmrc.swp
