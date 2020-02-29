@@ -1,4 +1,4 @@
-# App-navn
+# Mal for apper på Tjenesteplattformens hackathon feb 2020
 
 ## Ressurser
 - [Komponentbibliotek](https://tuuturu.github.io/vue/)
